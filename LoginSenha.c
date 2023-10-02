@@ -1,22 +1,22 @@
 #include <stdio.h>
-#include<stlib.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main () {
-    char usuario [250]= adm;
-    char senha [250]= 12345;
+    char loginSalvo [250]= "adm";
+    char senhaSalvo [250]= "12345";
+    char login [250];
+    char senha [250];
 
-    printf ("Informe seu login");
-    fgets (usuario, 250, stdin);
-    printf ("Digite sua senha");
-    fgets (senha, 250, stdin);
+    printf ("Informe seu login: ");
+    gets (login);
+    printf ("Digite sua senha: ");
+    gets (senha);
 
-    if (usuario = adm) or (login = 12345)
-    {
-     printf ("BEM VINDO!");
-    } else { 
+    if (strcmp(login, loginSalvo) == 0 && strcmp(senha, senhaSalvo)==0) {
+        printf ("BEM VINDO!");
+    } else  {
      printf ("LOGIN OU SENHA INVALIDOS");
-     {
-        return 0;
-    
-    
-}
+    }
+        return 0; 
+    }
